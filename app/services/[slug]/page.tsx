@@ -1,0 +1,5 @@
+import SitePage from '../../site-page';
+export function generateStaticParams(){return ['automation','panel-building','generator-services','hydropower','industrial-electrical','instrumentation'].map(slug=>({slug}))}
+const titles:Record<string,string>={automation:'Electrical Automation & Control Systems','panel-building':'Electrical Panel Design & Building','generator-services':'Standby Diesel Generator Services',hydropower:'Hydropower Plant Electrical Works','industrial-electrical':'Industrial Electrical Works & Maintenance',instrumentation:'Instrumentation & Control'};
+export async function generateMetadata({params}:{params:Promise<{slug:string}>}){const{slug}=await params;return{title:`${titles[slug]??'Engineering Services'} | Prosper Electrical Technologies`,description:`Professional ${titles[slug]??'electrical engineering'} services in Uganda from Prosper Electrical Technologies – SMC Limited.`}}
+export default async function Page({params}:{params:Promise<{slug:string}>}){const{slug}=await params;return <SitePage page="services" serviceSlug={slug}/>}
