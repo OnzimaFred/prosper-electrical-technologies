@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import './executive.css';
 
 export const metadata: Metadata = {
   title: 'Prosper Electrical Technologies – Electrical Automation & Power Engineering Uganda',
