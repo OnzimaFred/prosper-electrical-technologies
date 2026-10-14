@@ -3,7 +3,7 @@ import Link from 'next/link';
 import {useEffect,useRef,useState} from 'react';
 import {ArrowRight,Bolt,Boxes,Check,ChevronRight,CircuitBoard,Droplets,Gauge,ImageIcon,Menu,MessageCircle,Phone,ShieldCheck,Wrench,X} from 'lucide-react';
 // Free Web3Forms access key for info@prosper-apps.net (get one at web3forms.com). Leave empty to fall back to an email draft.
-const WEB3FORMS_KEY='';
+const WEB3FORMS_KEY='8e27670d-b835-4e48-b1ce-64bacc06e959';
 const whatsappUrl='https://wa.me/256781301004';
 type PageKey='home'|'about'|'services'|'industries'|'projects'|'products'|'contact'|'request-quote';
 const services=[
